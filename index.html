@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,8 +29,7 @@
       theme: {
         extend: {
           colors: {
-            'gradient-start': '#121212',
-            'gradient-end': '#121212',
+           
           }
         }
       }
@@ -50,11 +49,40 @@
 
 <body class="font-lato">
 
+    <nav>
+        <div class="navbar bg-base-100 border rounded-full bg-[#F85559] ">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost btn-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Home</a></li>
+                  <li><a>About </a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>All fruits</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="navbar-center">
+                <img src="images/logo.png" alt="">
+              <a class="btn btn-ghost normal-case text-2xl text-white ">Fruit Burst</a>
+            </div>
+            <div class="navbar-end">
+              <button class="btn btn-ghost btn-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+              </button>
+           
+      
+            </div>
+          </div>
+    </nav>
+
     <!--slider section-->
 
     <header class=" ">
 
-        <div class="carousel w-full ">
+        <div class="carousel m-h-[calc(100vh-150px)] w-full pt-5 ">
             <div id="slide1" class="carousel-item relative w-full  ">
               <img src="images/banner2.png" class="w-full " />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 ">
@@ -114,7 +142,130 @@
      
     </header>
 
-    <main>
+
+ <main>
+    <!--time-count-->
+
+    <div class="card & time">
+
+        <div class="words-time flex justify-between pt-20 p-20">
+            <div>
+                <h3 class="text-3xl font-bold">Deal of the day</h3>
+            <p class="pt-2">Contrary to popular belief, is not simply random text. It has roots in a piece of <br> classical Latin literature from 45 BC, making it over 2000 years old.</p>
+
+            </div>
+
+            <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-5xl">
+                    <span style="--value:15;"></span>
+                  </span>
+                  days
+                </div> 
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-5xl">
+                    <span style="--value:10;"></span>
+                  </span>
+                  hours
+                </div> 
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-5xl">
+                    <span style="--value:24;"></span>
+                  </span>
+                  min
+                </div> 
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-5xl">
+                    <span style="--value:1;"></span>
+                  </span>
+                  sec
+                </div>
+              </div>
+          
+
+        </div>
+
+
+
+
+        <div class="four-card">
+
+            <!--frist card-->
+
+<div class="grid p-10 gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+    <div class="card w-80 bg-base-100 p-9 border border-gray-400">
+        <figure><img class="w-36" src="images/fruit6.png" alt="appale" /></figure>
+        <div class="card-body justify-center items-center">
+          <h2 class="card-title">12.90$-18.85$</h2><hr>
+          <p>Apple</p>
+          <div class="rating justify-center">
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"checked  />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+          </div>
+          
+        </div>
+      </div>
+      <!--card-two-->
+    <div class="card w-80 bg-base-100 p-9 border border-gray-400">
+        <figure><img class="w-36" src="images/fruit7.png" alt="appale" /></figure>
+        <div class="card-body justify-center items-center">
+          <h2 class="card-title">12.90$ - 18.85$</h2><hr>
+          <p>Orange</p>
+          <div class="rating justify-center">
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"checked  />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+          </div>
+          
+        </div>
+      </div>
+      <!--third-card-->
+
+    <div class="card w-80 bg-base-100 p-9 border border-gray-400">
+        <figure><img class="w-36" src="images/fruit8.png" alt="appale" /></figure>
+        <div class="card-body justify-center items-center">
+          <h2 class="card-title">12.90$ - 18.85$</h2><hr>
+          <p>Red Dragon</p>
+          <div class="rating justify-center">
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"checked />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+          </div>
+          
+        </div>
+      </div>
+
+      <!--forth card-->
+    <div class="card w-80 bg-base-100 p-9 border border-gray-400">
+        <figure><img class="w-36" src="images/fruit9.png" alt="appale" /></figure>
+        <div class="card-body justify-center items-center">
+          <h2 class="card-title">12.90$-18.85$</h2><hr>
+          <p>Banana</p>
+          <div class="rating justify-center">
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"checked  />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+          </div>
+          
+        </div>
+      </div>
+</div>
+
+
+
+
+        </div>
+    </div>
+
 
     </main>
 
