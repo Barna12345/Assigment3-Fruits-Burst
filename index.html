@@ -69,9 +69,19 @@
               <a class="btn btn-ghost normal-case text-2xl text-white ">Fruit Burst</a>
             </div>
             <div class="navbar-end">
-              <button class="btn btn-ghost btn-circle">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-              </button>
+
+              <div class="flex gap-32">
+                <div >
+                  <input class="lg:visible rounded-xl " type="search" name="" id="" placeholder="Search">
+                  <button >
+    
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5  -mr-[10x]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                  </button>
+                </div>
+              
+                
+              </div>
+             
            
       
             </div>
@@ -80,18 +90,19 @@
 
     <!--slider section-->
 
-    <header class=" ">
+    <header class="">
 
-        <div class="carousel relative m-h-screen w-full pt-5 ">
-            <div id="slide1" class="carousel-item relative w-full  ">
+        <div class="carousel m-h-screen w-full pt-5 ">
+
+            <div id="slide1" class="carousel-item relative w-full  bg-opacity-75  ">
               <img src="images/banner2.png" class="w-full " />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 ">
+              <div class="absolute flex bg-gradient-to-b from-[#121212] to-[#12121225] h-[90vh] justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 ">
                 <a href="#slide4" class="btn btn-circle">❮</a> 
 
-            <div>
+            <div class="text-center pt-32">
                 <h2 class="text-4xl text-white font-extrabold">Exotic tastes at your
-                    <br> doorstep</h2>
-                <p class="text-white">We supply highly quality organic products</p>
+                    <br> doorstep</h2><br>
+                <p class="text-white">We supply highly quality organic products</p><br>
                 <button class="btn bg-[#F85559] text-white border-0">Shop Now</button>
             </div>
             
@@ -99,9 +110,9 @@
                 <a href="#slide2" class="btn btn-circle">❯</a>
               </div>
             </div> 
-            <div id="slide2" class="carousel-item relative w-full">
+            <div id="slide2" class="carousel-item relative w-full  bg-opacity-75">
               <img src="images/banner1.png" class="w-full" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <div class="absolute flex bg-gradient-to-b from-[#121212] to-[#12121225] h-[90vh] justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide1" class="btn btn-circle">❮</a>
                 <div>
                     <h2 class="text-4xl text-white font-extrabold">Exotic tastes at your
@@ -138,6 +149,30 @@
                 <a href="#slide1" class="btn btn-circle">❯</a>
               </div>
             </div>
+          </div>
+
+          <div class="w-9/12 mx-auto text-center relative -mt-20 bg-white -200 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5">
+            <div>
+              <img src="images/fruit1.png" alt="">
+              <p>Grape</p>
+            </div>
+            <div>
+              <img src="images/fruit2.png" alt="">
+              <p>Orange</p>
+            </div>
+            <div>
+              <img src="images/fruit3.png" alt="">
+              <p>Mango</p>
+            </div>
+            <div>
+              <img src="images/fruit4.png" alt="">
+              <p>Strawberry</p>
+            </div>
+            <div>
+              <img src="images/fruit5.png" alt="">
+              <p>Pomegrante</p>
+            </div>
+
           </div>
      
     </header>
@@ -189,7 +224,7 @@
         </div>
 
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-5 gap-8">
+        <div class="grid mt-4 gap-7 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
 
           <!--card -->
 
@@ -383,12 +418,12 @@
                       <input type="radio" name="rating-3"
                           class="bg-common-red mask mask-star-2 mask-half-2 mr-2" />
                       <input type="radio" name="rating-3" class="bg-common-red mask mask-star-2 mask-half-1"
-                          checked />
+                          />
                       <input type="radio" name="rating-3"
                           class="bg-common-red mask mask-star-2 mask-half-2 mr-2" />
                       <input type="radio" name="rating-3" class="bg-common-red mask mask-star-2 mask-half-1" />
                       <input type="radio" name="rating-3"
-                          class="bg-common-red mask mask-star-2 mask-half-2 mr-2" />
+                          class="bg-common-red mask mask-star-2 mask-half-2 mr-2 " checked />
                       <input type="radio" name="rating-3" class="bg-common-red mask mask-star-2 mask-half-1" />
                       <input type="radio" name="rating-3"
                           class="bg-common-red mask mask-star-2 mask-half-2 mr-2" />
@@ -421,13 +456,13 @@
                               <input type="radio" name="rating-3"
                                   class="bg-common-red mask mask-star-2 mask-half-2 mr-2" />
                               <input type="radio" name="rating-3"
-                                  class="bg-common-red mask mask-star-2 mask-half-1" checked />
+                                  class="bg-common-red mask mask-star-2 mask-half-1" />
                               <input type="radio" name="rating-3"
                                   class="bg-common-red mask mask-star-2 mask-half-2 mr-2" />
                               <input type="radio" name="rating-3"
                                   class="bg-common-red mask mask-star-2 mask-half-1" />
                               <input type="radio" name="rating-3"
-                                  class="bg-common-red mask mask-star-2 mask-half-2 mr-2" />
+                                  class="bg-common-red mask mask-star-2 mask-half-2 mr-2"checked  />
                               <input type="radio" name="rating-3"
                                   class="bg-common-red mask mask-star-2 mask-half-1" />
                               <input type="radio" name="rating-3"
